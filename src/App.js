@@ -1,6 +1,7 @@
 import './App.css';
 import React from 'react'
 import Navbar from './components/Navbar';
+import Certificates from './components/Certificates';
 import Work from './components/Work';
 import Projects from './components/Projects';
 import TextArea from './components/TextArea';
@@ -313,11 +314,12 @@ function App() {
   return (
     <>
     <Router>
-    <Navbar title="IS" h1="About" h2="Education" h3="Projects" />
+    <Navbar title="IS" h1="About" h2="Education" h3="Projects" h4="Certifications" />
     <Routes>
       <Route exact path='/' element={<TextArea languages={lang} courses={courseLists} skill={skillInfo} edu={educationalInfo} info={contactInformation} name="Insha Samnani" about="I am a goal-oriented and hardworking person, continuously in search of various opportunities relating to my skills. I always try to focus on my aims to achieve them with enthusiasm and get connected with ongoing activities benefiting my skills. Besides, I have good communication and leadership skills and experience in working as a group under many opinions." key="11"/>} />
       <Route exact path='/Education' element={<Work key="33"/>} />
       <Route exact path='/Projects' element={<Projects key="55" />} />
+      <Route exact path='/Certifications' element={<Certificates key="22" />} />
     </Routes>
     </Router>
     </>

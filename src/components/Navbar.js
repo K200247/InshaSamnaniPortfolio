@@ -35,6 +35,9 @@ export default function Navbar(props){
                         <li className="nav-item">
                             <Link className={`nav-link ${location.pathname===props.h3? "active": ""}`} to={props.h3} style={{color:'white'}} onClick={handleLinkClick}>{props.h3}</Link>
                         </li>
+                        <li className="nav-item">
+                            <Link className={`nav-link ${location.pathname===props.h4? "active": ""}`} to={props.h4} style={{color:'white'}} onClick={handleLinkClick}>{props.h4}</Link>
+                        </li>
                     </ul>
                 </div>
             </div>
